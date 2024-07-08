@@ -27,11 +27,11 @@ const FiltroTelefone = ({ agendas, aoDeletar }) => {
              <Link to="/listagendamentos">
                     <IoArrowBackSharp size={25} className="mb-10"/>
                 </Link>
-            <label className="pt-14 font-bold sm:text-xs lg:text-base md:text-base">(Telefone)</label>
-            <div className="flex">
+            <label className="pt-14 font-bold sm:text-xs lg:text-base md:text-base sm:-ml-5 lg:-ml-0">(Telefone)</label>
+            <div className="flex sm:-ml-5 lg:-ml-0">
                 <input
                     type="text"
-                    className="bg-corFundo-100 w-52 rounded-lg h-7 focus:outline-yellow-700 pl-2"
+                    className="bg-corFundo-100 w-52 rounded-lg h-7 focus:outline-yellow-700 lg:pl-2"
                     value={filtroTelefone}
                     onChange={handleFiltroChange}
                 />
@@ -39,7 +39,7 @@ const FiltroTelefone = ({ agendas, aoDeletar }) => {
                     className="ml-4 border-spacing-2 bg-yellow-300 hover:bg-yellow-200 rounded-lg border-white px-1 py-1 -mt-1"
                     onClick={handlePesquisarClick}
                 >
-                    <p className="lg:text-base sm:text-sm">Pesquisar</p>
+                    <p className="sm:text-xs lg:text-base md:text-base">Pesquisar</p>
                 </button>
             </div>
             <div>
