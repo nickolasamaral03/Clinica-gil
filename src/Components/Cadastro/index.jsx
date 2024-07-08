@@ -41,21 +41,21 @@ const Cadastro = (props) => {
     }
 
     return(
-    <form onSubmit={PegandoValores} className="border border-white mx-96 p-12 rounded-md bg-white">
-        <Link to="/"><IoArrowBackSharp size={25}/></Link>
-        <h2 className="text-center text-3xl italic">Cadastro</h2>
+    <form onSubmit={PegandoValores} className="border border-white lg:mx-96 lg:p-12 rounded-md bg-white sm:py-6">
+        <Link to="/"><IoArrowBackSharp size={25} className="sm:ml-4 lg:ml-0"/></Link>
+        <h2 className="text-center lg:text-3xl md:text-3xl sm:text-2xl italic animate-pulse underline">Cadastro</h2>
         {mensagem && (
                 <div className="bg-red-500 text-white text-center py-2 my-2 rounded-md">
                     <p>{mensagem}</p>
                 </div>
             )}
-        <div className="grid m-10">
-            <label>Nome</label>
-            <input type="text" required onChange={aoNome} value={nome} className="bg-corFundo-100 w-80 rounded-lg mt-1 h-8 focus:outline-none pl-2"/>
+        <div className="lg:grid lg:justify-start md:grid sm:flex m-10 sm:justify-center">
+            <label className="sm:text-left sm:mr-3 sm:mt-2">Nome</label>
+            <input type="text" required onChange={aoNome} value={nome} className="bg-corFundo-100 lg:w-80 md:w-80 sm:w-64 rounded-lg mt-1 h-8 focus:outline-yellow-700 pl-2"/>
         </div>
-        <div className="grid m-10">
-            <label>Telefone</label>
-            <input type="text" required onChange={aoTelefone} value={telefone} className="bg-corFundo-100 w-80 rounded-lg mt-1 h-8 focus:outline-none pl-2"/>
+        <div className="lg:grid lg:justify-start md:grid sm:flex m-10 sm:justify-center">
+            <label className="sm:text-left sm:mr-2 sm:mt-2">Telefone</label>
+            <input type="text" required onChange={aoTelefone} value={telefone} className="bg-corFundo-100 lg:w-80 md:w-80 sm:w-64 rounded-lg mt-1 h-8 focus:outline-yellow-700 pl-2 sm:mr-3"/>
         </div>
         <div className="flex justify-center"><button className="border-spacing-2 bg-yellow-300 hover:bg-yellow-200 rounded-lg border-white px-5 py-1">Cadastrar</button></div>
     </form>
@@ -63,3 +63,4 @@ const Cadastro = (props) => {
 }
 
 export default Cadastro
+

@@ -51,9 +51,9 @@ const Agendamento = (props) => {
     };
 
     return (
-        <form onSubmit={PegandoAgenda} className="border border-white mx-96 p-12 rounded-md bg-white">
-            <Link to="/" className="absolute left-10 top-3"><IoArrowBackSharp size={25}/></Link>
-            <h2 className="text-center text-3xl italic">Agendamento</h2>
+        <form onSubmit={PegandoAgenda} className="border border-white lg:mx-96 p-10 rounded-md bg-white sm:mx-10 relative">
+            <Link to="/" className="absolute left-10 top-6 sm:left-4 lg:ml-0"><IoArrowBackSharp size={25}/></Link>
+            <h2 className="text-center lg:text-3xl md:text-3xl sm:text-xl italic animate-pulse underline">Agendamento</h2>
             {mensagem && (
                 <div className="bg-red-500 text-white text-center py-2 my-2 rounded-md">
                     <p>{mensagem}</p>
@@ -61,15 +61,15 @@ const Agendamento = (props) => {
             )}
             <div className="grid m-10">
                 <label>Dia</label>
-                <input type="date" min={getDataAtual()} required onChange={(e) => setDia(e.target.value)} value={dia} className="bg-corFundo-100 w-80 rounded-lg mt-1 h-8 focus:outline-none pl-2" />
+                <input type="date" min={getDataAtual()} required onChange={(e) => setDia(e.target.value)} value={dia} className="bg-corFundo-100 sm:w-46 md:w-80 lg:w-80 rounded-lg mt-1 h-8 focus:outline-yellow-700 pl-2" />
             </div>
             <div className="grid m-10">
                 <label>Horário</label>
-                <input type="time" required onChange={(e) => setHorario(e.target.value)} value={horario} className="bg-corFundo-100 w-80 rounded-lg mt-1 h-8 focus:outline-none pl-2" />
+                <input type="time" required onChange={(e) => setHorario(e.target.value)} value={horario} className="bg-corFundo-100 sm:w-46 md:w-80 lg:w-80 rounded-lg mt-1 h-8 focus:outline-yellow-700 pl-2" />
             </div>
             <div className="grid m-10">
                 <label>Especialidade</label>
-                <input type="text" required onChange={(e) => setEspecialidade(e.target.value)} value={especialidade} className="bg-corFundo-100 w-80 rounded-lg mt-1 h-8 focus:outline-none pl-2" />
+                <input type="text" required onChange={(e) => setEspecialidade(e.target.value)} value={especialidade} className="bg-corFundo-100 sm:w-46 md:w-80 lg:w-80 rounded-lg mt-1 h-8 focus:outline-yellow-700 pl-2" />
             </div>
             <div className="flex justify-center">
                 <button className="border-spacing-2 bg-yellow-300 hover:bg-yellow-200 rounded-lg border-white px-5 py-1">Agendar</button>
