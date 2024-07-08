@@ -31,7 +31,7 @@ const FiltroTelefone = ({ agendas, aoDeletar }) => {
             <div className="flex sm:-ml-5 lg:-ml-0">
                 <input
                     type="text"
-                    className="bg-corFundo-100 w-52 rounded-lg h-7 focus:outline-yellow-700 lg:pl-2"
+                    className="bg-corFundo-100 w-52 rounded-lg h-7 focus:outline-yellow-700 lg:pl-2 sm:pl-2"
                     value={filtroTelefone}
                     onChange={handleFiltroChange}
                 />

@@ -30,7 +30,7 @@ const ListaDeCadastros = ({ usuarios, aoDeletarCadastro }) => {
                 <div className="flex">
                     <input
                         type="text"
-                        className="bg-corFundo-100 lg:w-52 md:w-60 sm:w-44 sm:pl-0 rounded-lg h-7 focus:outline-yellow-700 lg:pl-2"
+                        className="bg-corFundo-100 lg:w-52 md:w-60 sm:w-44 rounded-lg h-7 focus:outline-yellow-700 lg:pl-2 sm:pl-2"
                         value={filtroTelefone}
                         onChange={handleFiltroChange}
                     />
